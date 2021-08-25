@@ -1,0 +1,27 @@
+# LOGOUT LOCATION IS NOT RESTORED ON PLAYER AUTHORIZATION
+fixedSpawn: true
+spawnWorld: world
+spawnX: 0
+spawnY: 90
+spawnZ: 0
+spawnYaw: 0
+spawnPitch: 0
+
+
+# THE FOLLOWING ARE RESTORED ON PLAYER AUTHORIZATION
+
+# if disabled, the player becomes immune to all damage and unable
+# to interact with blocks (or break them), entities and items (inventory or not)
+allowInteract: false
+
+# if disabled, the player is kept in one
+# place but is allowed to look around
+allowMovement: false
+
+# disables item pickup and shows the player an empty inventory
+# restores the normal inventory on authorization, disconnect or server shutdown
+hideInventory: true
+
+# restores the player's air level, fire tick and potion effects
+# on authorization, disconnect or server shutdown
+preserveEffects: true

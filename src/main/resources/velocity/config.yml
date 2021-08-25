@@ -1,0 +1,39 @@
+# BlitzLogin currently only supports MySQL databases.
+# It is required to set these in order to use the plugin
+storageAddress: 'localhost:3306'
+storageDatabase: ''
+storageUsername: ''
+storagePassword: ''
+
+# how long will the server wait for cracked players with
+# premium nicknames to rejoin (in seconds)
+# set to 0 to disable this
+# note that the first time they attempt to join
+# they will be kicked with the "Invalid session" reason
+# thus they'll have to join the server a second time
+secondAttempt: 20
+
+# the server where players that aren't logged in are redirected
+limboServers: [login]
+# the server where authenticated players are redirected
+mainServers: [lobby]
+
+# how long to wait (in seconds) for players to log in or register before kicking them
+maxAuthTime: 90
+
+# how many attempts of logging in is a player allowed to make before getting kicked
+maxLoginAttempts: 5
+# for how long (in seconds) will a user be unable to connect after guessing the wrong password
+# note that this is IP based and not username based
+# set to 0 to disable this
+cooldownTime: 120
+
+# the session time (in minutes)
+# sessions work only when a cracked player joins from the same IP
+sessionTime: 120
+# whether to refresh the session time when the player leaves
+refreshSession: true
+
+# whether log player joins in console
+logPremium: false
+logCracked: false

@@ -1,0 +1,4 @@
+name: BlitzLogin
+version: @version@
+main: tk.blitzfarm.blitzlogin.spigot.BlitzLoginSpigot
+authors: [XXMA]
